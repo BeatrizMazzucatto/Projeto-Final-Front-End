@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilos/css.css">
+        <link rel="icon" href="imagens/logo.jpeg">
+        <title>Bia's Livraria</title>
+    </head>
+    <body>
+        <header>
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="estante.html">Estante</a></li>
+                    <li><a href="cesta.html">Cesta</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+                <div>
+                    <h1>Bia's Livraria</h1>
+                    <img src="imagens/logo.jpeg" alt="Logo">
+                </div>
+            </div>	
+        </header>
+        <main>
+            <h1>Entre em contato!</h1>
+            <img  class="logo" src="imagens/logo.jpeg" alt="Logo Bia's Livraria">
+            <form id="contactForm">
+                <label for="nome" class="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" minlength="10" maxlength="50">
+    
+                <label for="e-mail" class="email">Email:</label>
+                <input type="email" id="e-mail" name="e-mail" placeholder="E-mail" minlength="10" maxlength="50">
+    
+                <label for="mesage" class="mensagem">Mensagem:</label>
+                <textarea id="mesage" name="message" placeholder="Mensagem" rows="4" minlength="10"></textarea>
+    
+                <button class="contato" type="submit">Entre em Contato</button>
+            </form>
+        </main> 
+        <script src="scripts/script2.js"></script>
+    </body>
+</html>   

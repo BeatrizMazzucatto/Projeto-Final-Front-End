@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos/css.css">
+    <link rel="icon" href="imagens/logo.jpeg">
+    <title>Bia's Livraria</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html" title="Ir para Home">Home</a></li>
+                <li><a href="estante.html" title="Ir para Estante">Estante</a></li>
+                <li><a href="cesta.html" title="Você está na Cesta">Cesta</a></li>
+                <li><a href="contato.html" title="Ir para Contato">Contato</a></li>
+            </ul>
+            <div>
+                <h1>Bia's Livraria</h1>
+                <img src="imagens/logo.jpeg" alt="Logo Bia's Livraria">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="cesta">
+            <h2>Cesta</h2>
+            <div id="livros">
+                <div class="livro">
+                    <img class="estante" src="imagens/boxaselecao.png" title="Box A Seleção" alt="Box A Seleção">
+                    <p>Preço: R$200,00</p>
+                    <button class="adicionar" data-nome="Box a Seleção" data-preco="200.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="livro">
+                    <img class="estante" src="imagens/boxacotar.png" title="Box Acotar" alt="Box Acotar">
+                    <p>Preço: R$260,00</p>
+                    <button class="adicionar" data-nome="Box Acotar" data-preco="260.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="livro">
+                    <img class="estante" src="imagens/boxafter.png" title="Box After" alt="Box After">
+                    <p>Preço: R$140,00</p>
+                    <button class="adicionar" data-nome="Box After" data-preco="140.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="livro">
+                    <img class="estante" src="imagens/boxharrypotter.png" title="Box Harry Potter"  alt="Box Harry Potter">
+                    <p>Preço: R$480,00</p>
+                    <button class="adicionar" data-nome="Box Harry Potter" data-preco="480.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="livro">
+                    <img class="estante" src="imagens/boxcrepusculo.png" title="Box Crepúsculo + Sol da Meia Noite" alt="Box Crepúsculo + Sol da Meia Noite">
+                    <p>Preço: R$170,00</p>
+                    <button class="adicionar" data-nome="Box Crepúsculo + Sol da Meia Noite" data-preco="170.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="livro">
+                    <img class="estante" src="imagens/boxdesangue.png" title="Os quarto livros de Sangue e Cinzas" alt="Os quarto livros de Sangue e Cinzas">
+                    <p>Preço: R$225,00</p>
+                    <button class="adicionar" data-nome="Livros de Sangue e Cinzas" data-preco="225.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="livro">
+                    <img class="estante" src="imagens/boxinstrumentos.png" title="Box Instrumentos Mortais" alt="Box Instrumentos Mortais">
+                    <p>Preço: R$340,00</p>
+                    <button class="adicionar" data-nome="Box Instrumentos Mortais" data-preco="340.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="livro">
+                    <img class="estante" src="imagens/boxpercy.png" title="Box Percy Jackson" alt="Box Percy Jackson">
+                    <p>Preço: R$280,00</p>
+                    <button class="adicionar" data-nome="Box Percy Jackson" data-preco="280.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="livro">
+                    <img class="estante" src="imagens/boxpovodoar.png" title="Box Povo do Ar" alt="Box Povo do Ar">
+                    <p>Preço: R$165,00</p>
+                    <button class="adicionar" data-nome="Box Povo do Ar" data-preco="165.00">Adicionar ao Carrinho</button>
+                </div>
+                <div class="livro">
+                    <img class="estante" src="imagens/boxtronodevidro.jpg" title="Box Trono de Vidro" alt="Box Trono de Vidro">
+                    <p>Preço: R$390,00</p>
+                    <button class="adicionar" data-nome="Box Trono de Vidro" data-preco="390.00">Adicionar ao Carrinho</button>
+                </div>
+                <div id="carrinho" class="caixa">
+                    <h2>Carrinho de Compras</h2>
+                    <ul id="lista_carrinho"></ul>
+                    <p id="total">Total: R$0.00</p>
+                    <button class="botao_pag">Continuar</button>
+                </div>
+            </div>
+        </div>
+        <div class="esconde">
+            <h2>Pagamento</h2>
+            <form id="purchaseForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" minlength="10" maxlength="50">
+
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" minlength="11" maxlength="11">
+
+                <label for="phone">Celular com DDD:</label>
+                <input type="tel" id="phone" minlength="11" maxlength="11">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" minlength="10" maxlength="50">
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" minlength="8" maxlength="8">
+
+                <label for="address">Endereço:</label>
+                <input type="text" id="endereco" minlength="10" maxlength="100">
+
+                <label for="numeroResidencia">Número da Residência:</label>
+                <input type="text" id="numeroResidencia" minlength="1" maxlength="10">
+
+                <label for="complemento">Complemento:</label>
+                <input type="text" id="complemento" minlength="1" maxlength="50">
+
+                <label for="card">Cartão de Crédito:</label>
+                <select name="Cartão de Crédito" id="card">
+                    <option value="" >Cartão de Crédito</option>
+                    <option value="cartao">Elo</option>
+                    <option value="cartao">Visa</option>
+                    <option value="cartao">Itau</option>
+                    <option value="cartao">Alelo</option>
+                    <option value="cartao">Bradesco</option>
+                    <option value="cartao">Hipercard</option>
+                    <option value="cartao">Mastercard</option>
+                    <option value="cartao">American Express</option>
+                </select>
+
+                <label for="address">Número do Cartão:</label>
+                <input type="text" id="numCard" minlength="13" maxlength="16">
+
+                <label for="address">CVV:</label>
+                <input type="text" id="address"  minlength="3" maxlength="4">
+
+                <label for="installments">Número de Parcelas:</label>
+                <select name="Número de Parcelas" id="installments">
+                    <option value="">Número de Parcelas</option>
+                    <option value="number">1X parcela</option>
+                    <option value="number">2X parcelas</option>
+                    <option value="number">3X parcelas</option>
+                    <option value="number">4X parcelas</option>
+                    <option value="number">5X parcelas</option>
+                    <option value="number">6X parcelas</option>
+                    <option value="number">7X parcelas</option>
+                    <option value="number">8X parcelas</option>
+                    <option value="number">9X parcelas</option>
+                    <option value="number">10X parcelas</option>
+                    <option value="number">11X parcelas</option>
+                    <option value="number">12X parcelas</option>
+                </select>
+
+                <p id="valortotal">Valor Total: $0.00</p>
+
+                <button class="finalizar" type="button">Finalizar Compra</button>
+            </form>
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
